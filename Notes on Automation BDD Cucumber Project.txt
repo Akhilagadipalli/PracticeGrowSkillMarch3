@@ -1,0 +1,73 @@
+Project Overview 
+----------------------------
+
+I am currently working on Project named Anthem which is an insurance company in US, Currently I am working as an functional and automation tester in my team ,
+Customer Service Portal 
+CRUD operations for Customer 
+
+
+
+
+We have a scrum team where there are 4 tester and all of them work in both manual and automation testing. We are following agile methodology where we have sprints for 2 weeks . we do the manual testing in sprint n and for the same user stories we do an automation testing in sprint n+1 .
+
+My day to day task is to write test cases for all the user stories assigned to be completed in the sprint and also to complete automation testing for those. 
+
+Project Framework Explaination
+-------------------------------------
+We are using maven as a build tool for our automation framework .
+Majorly we have two folders as src/main and src/test
+We are following page object model for our framework .
+Our framework is based on BDD Cucumber . 
+
+We have written all the feature files corresponding to which we have step definitions and also we have a runner file which controls the entire execution 
+
+We also have a utilities package which contains all re usable classes .
+We have capability in our framework to fetch data from property files as well as from excel sheet .
+
+We also have a constant class which contains all the hard coded paths so that our framework is optimized . 
+
+Since we are following Page Object Model , we have page classes for all the web page in the application , all the locators and methods related to webpage are being added in the page class .
+
+We are generating cucumber as well as spark extent report for our framework 
+
+Flow 
+-------------
+Feature files ----> step def----> page classes(all locators and methods are written) and common functions
+
+test runner ----> reports are getting generated 
+
+
+Inheritance 
+----------------------
+In our framework we have page classes which inherits the base class as base class contains all the re usable methods so in this way inheritance in achieved 
+
+
+Polymorphism 
+--------------------------------
+In our framework we have a capability to run the same test script in diff browser
+So polymorphism is achieved in that way 
+We also have used explicit wait in our framework where in the same method we can pass diff diff arguments for time 
+So polymorphism is achieved in that way 
+
+Abstraction 
+-------------------------------------------
+We have used webdriver, takesscreenshot, javascript executor all of them are interface which indirectly implements abstraction 
+
+Encapsulation 
+----------------------------------
+
+We have created page classes where locators and methods are defined together 
+which in directly is implementing Encapsulation 
+
+
+
+
+
+
+
+
+
+
+
+
+
